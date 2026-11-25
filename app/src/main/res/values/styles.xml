@@ -1,0 +1,22 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_6200EE</item>
+        <item name="colorPrimaryDark">@color/color_3700B3</item>
+        <item name="colorAccent">@color/color_03DAC5</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- 注意：不要在这里加 android:keepScreenOn。主题级属性会作用于该主题下所有 View，
+         导致暂停播放后屏幕依旧不超时息屏；是否常亮由 BasePlayerView 按播放状态自行控制。 -->
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar" />
+</resources>
